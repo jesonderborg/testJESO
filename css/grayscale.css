@@ -63,7 +63,7 @@ a:focus {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
+    /* border-bottom: 1px solid rgba(255,255,255,.3); */
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #000;
@@ -135,7 +135,7 @@ a:focus {
 
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
+        /* border-bottom: 1px solid rgba(255,255,255,.3); */
         background: #000;
     }
 }
@@ -266,7 +266,7 @@ a:focus {
     padding: 50px 0;
     color: #fff;
     background: url(../img/flounder-hand.jpg) no-repeat center center scroll;
-    background-color: #dcd97f;
+    background-color: #4fd3f8;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -306,7 +306,7 @@ a:focus {
 
 .btn-default {
     border: 1px solid #4fd3f8;
-    color: #4fd3f8;
+    color: #000;
     background-color: transparent;
 }
 
