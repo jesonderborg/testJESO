@@ -7,9 +7,9 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #fff;
-    background-color: #000;
+    font-family: Calibri,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #2A4565;
+    background-color: #4fd3f8;
 }
 
 html {
@@ -33,7 +33,7 @@ h6 {
 p {
     margin: 0 0 25px;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.2;
 }
 
 @media(min-width:768px) {
@@ -266,7 +266,7 @@ a:focus {
     padding: 50px 0;
     color: #fff;
     background: url(../img/flounder-hand.jpg) no-repeat center center scroll;
-    background-color: #000;
+    background-color: #dcd97f;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -305,8 +305,8 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
+    border: 1px solid #4fd3f8;
+    color: #4fd3f8;
     background-color: transparent;
 }
 
