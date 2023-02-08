@@ -1,3 +1,15 @@
+// H to V GPT
+// window.onscroll = function() {
+//   var header = document.querySelector("#header");
+//   var navbar = document.querySelector("#navbar");
+//   if (window.pageYOffset > header.offsetHeight) {
+//     navbar.classList.add("scrolled");
+//   } else {
+//     navbar.classList.remove("scrolled");
+//   }
+// };
+// H to V GPT
+
 /*!
  * Bootstrap v3.3.2 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
