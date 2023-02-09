@@ -1,13 +1,12 @@
 // H to V GPT
-// window.onscroll = function() {
-//   var header = document.querySelector("#header");
-//   var navbar = document.querySelector("#navbar");
-//   if (window.pageYOffset > header.offsetHeight) {
-//     navbar.classList.add("scrolled");
-//   } else {
-//     navbar.classList.remove("scrolled");
-//   }
-// };
+window.onscroll = function() {
+  let homeButton = document.getElementById("homeButton");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    homeButton.style.display = "block";
+  } else {
+    homeButton.style.display = "none";
+  }
+};
 // H to V GPT
 
 /*!
