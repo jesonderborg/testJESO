@@ -51,9 +51,11 @@
   --bs-danger-rgb: 161, 100, 104;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
+  --bs-jeso-yellow: 220, 217, 127;
   --bs-black-rgb: 0, 0, 0;
   --bs-white-rgb: 255, 255, 255;
   --bs-white-rgb: 255, 255, 255;
+  
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
@@ -7937,6 +7939,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-jeso1 {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-jeso-yellow), var(--bs-text-opacity)) !important;
+}
+
 .text-white {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
@@ -8021,6 +8028,11 @@ textarea.form-control-lg {
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-jeso1 {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-jeso-yellow), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {
@@ -11557,18 +11569,39 @@ body {
 }
 
 /* page top*/
+
 .masthead {
   position: relative;
   width: 100%;
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #2a4565 200%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 100%), url("../assets/img/Alsion_1.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
+
+.masthead::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url("../assets/img/Alsion_1.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  /* mix-blend-mode: normal; */
+  opacity: 0;
+}
+
+
+
+
 .masthead h1, .masthead .h1 {
   font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
@@ -11612,15 +11645,15 @@ body {
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(to top, #2a4565 0%,  rgba(0, 0, 0, 0.8) 50%), url("../assets/img/bg-signup.jpg");
 }
 .about-section p {
   margin-bottom: 5rem;
 }
 
 .projects-section {
-  padding: 10rem 0;
-  background: linear-gradient(to top, #dcd97f 0%, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0.9) 75%);
+  padding-top: 10rem 0;
+  background: linear-gradient(to top, #dcd97f 0%, rgba(42, 69, 101, 1) 100%, rgba(0, 0, 0, 0.9) 100%);
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -11628,7 +11661,7 @@ body {
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid #dcd97f;
   }
 }
 .projects-section .project-text {
@@ -11667,6 +11700,12 @@ body {
 
 .contact-section {
   padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3) 0%, #dcd97f 100%), url("../assets/img/bg-signup.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
 }
 .contact-section .card {
   border: 0;
@@ -11684,24 +11723,28 @@ body {
   width: 3rem;
 }
 .contact-section .social {
-  margin-top: 5rem;
+  margin-top: 3rem;
+  /* margin-bottom: 5rem; */
 }
 .contact-section .social a {
   text-align: center;
   height: 3rem;
   width: 3rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: #2a4565;
   border-radius: 100%;
   line-height: 3rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: #4fd3f8;
 }
 .contact-section .social a:hover {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 255, 255, 0.5);
 }
 .contact-section .social a:active {
   color: #fff;
 }
 
 .footer {
-  padding: 5rem 0;
+  padding: 3rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3) 0%, #2a4565 0%), url("../assets/img/bg-signup.jpg");
+  /* background-color: #2a4565;
+  background: #2a4565; */
 }
