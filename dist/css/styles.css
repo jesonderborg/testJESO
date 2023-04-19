@@ -52,6 +52,7 @@
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-jeso-yellow: 220, 217, 127;
+  --bs-jeso-blue: 42, 69, 101;
   --bs-black-rgb: 0, 0, 0;
   --bs-white-rgb: 255, 255, 255;
   --bs-white-rgb: 255, 255, 255;
@@ -7944,6 +7945,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-jeso-yellow), var(--bs-text-opacity)) !important;
 }
 
+.text-jeso2 {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-jeso-blue), var(--bs-text-opacity)) !important;
+}
+
 .text-white {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
@@ -11649,6 +11655,20 @@ body {
 }
 .about-section p {
   margin-bottom: 5rem;
+}
+
+/* .about-subsection {
+  display: none;
+} */
+.about-subsection {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.about-subsection.active {
+  max-height: 1000px;
+  overflow: visible;
 }
 
 .projects-section {
